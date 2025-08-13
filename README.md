@@ -20,7 +20,7 @@ This project showcases SQL data loading and analytics in PostgreSQL using pgAdmi
 5. **(Optional) Export results**: in the result grid, click the **disk** icon and save CSVs into a `/results` folder for your repo.
 
 ## Notes
-- Requires PostgreSQL 13+ (tested on 17). Uses `to_date('DD-MM-YYYY')` when loading sales. 
+- Requires PostgreSQL 13+ (tested on 17). Uses `to_date('12-08-2025)` when loading sales. 
 - If you prefer server‑side `COPY`, adapt paths and permissions (or keep using pgAdmin Import/Export to avoid file access issues).
 
 ## Example questions covered
