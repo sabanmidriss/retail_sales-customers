@@ -1,4 +1,4 @@
-# Retail Sales & Customers — SQL Analytics (PostgreSQL / pgAdmin 4)
+# Retail Sales & Customers — SQL Analytics
 
 This project showcases SQL data loading and analytics in PostgreSQL using pgAdmin 4. It includes schema creation, a safe load pipeline via a staging table, and a few analysis queries (total revenue, best category, top malls, gender x category).
 
@@ -19,9 +19,6 @@ This project showcases SQL data loading and analytics in PostgreSQL using pgAdmi
 4. **Run analytics**: execute queries from `sql/retail_sales.sql` one-by-one in pgAdmin.
 5. **(Optional) Export results**: in the result grid, click the **disk** icon and save CSVs into a `/results` folder for your repo.
 
-## Notes
-- Requires PostgreSQL 13+ (tested on 17). Uses `to_date('12-08-2025)` when loading sales. 
-- If you prefer server‑side `COPY`, adapt paths and permissions (or keep using pgAdmin Import/Export to avoid file access issues).
 
 ## Example questions covered
 - What is the total revenue? (sum of `quantity*price`)   
