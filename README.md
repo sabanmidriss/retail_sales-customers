@@ -10,15 +10,16 @@ This project showcases SQL data loading and analytics in PostgreSQL using pgAdmi
   - Most popular category by revenue. 
   - Top 3 malls by revenue.
   - Gender distribution per category (two variants). 
-## How to run (pgAdmin 4)
-1. **Create objects**: open Query Tool → run `sql/tables.sql` to create schemas/tables.
-2. **Load CSVs** (GUI, recommended):
-   - Import `customer_data.csv` into **retail.customers** (CSV, Header ✓).
-   - Import `sales_data.csv` into **staging.staging_sales_raw** (CSV, Header ✓).
-3. **Transform to final**: open Query Tool → run `sql/data.sql` to insert into `retail.sales` (date parsing + numeric cast). 
-4. **Run analytics**: execute queries from `sql/retail_sales.sql` one-by-one in pgAdmin.
-5. **(Optional) Export results**: in the result grid, click the **disk** icon and save CSVs into a `/results` folder for your repo.
+## How to run 
 
+Create objects: run sql/tables.sql to create schemas/tables.
+
+
+-	Import customer_data.csv into retail.customers (CSV, Header ✓).
+-	Import sales_data.csv into staging.staging_sales_raw (CSV, Header ✓).
+-	Transform to final: run sql/data.sql to insert into retail.sales (date parsing + numeric cast).
+-	Run analytics: execute queries from sql/retail_sales.sql one by one.
+-	(Optional) Export results: save query outputs into a /results folder for your repo.
 
 ## Example questions covered
 - What is the total revenue? (sum of `quantity*price`)   
