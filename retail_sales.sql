@@ -1,7 +1,7 @@
 ---Retail Analytics
 
 ------------------------------------------------------------
--- 0) Quick sanity checks (peek at data)
+
 ------------------------------------------------------------
 SELECT * FROM retail.customers LIMIT 5;
 SELECT * FROM retail.sales LIMIT 5;
@@ -62,7 +62,7 @@ GROUP BY rc.gender, rs.category
 ORDER BY rs.category, tx_count DESC;
 
 ------------------------------------------------------------
--- (B) % share of each gender within its category (nice for reporting)
+-- (B) % share of each gender within its category 
 ------------------------------------------------------------
 SELECT
   rs.category,
